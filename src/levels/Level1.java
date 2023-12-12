@@ -42,7 +42,7 @@ public class Level1 {
         /*
          * TO DO 6:  Ajouter 200 Dt pour les enseignants dont le nom commence par m et afficher celui qui a le salaire le plus élevé
          */
-        employees.stream().filter(/* TO DO 6 */).forEach(/* TO DO 6 */);
+        employees.stream().filter(teacher -> teacher.getName().startsWith("m")).forEach(teacher -> teacher.setSalary(teacher.getSalary()+200));
 
     }
 }
